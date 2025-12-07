@@ -1,0 +1,20 @@
+class Solution {
+    public int countOdds(int low, int high) {
+        return (high + 1) / 2 - low / 2;
+    }
+    
+    public static void main(String[] args) {
+        Solution sol = new Solution();
+        
+        // Example 1
+        System.out.println("countOdds(3, 7) = " + sol.countOdds(3, 7));  // 3
+        
+        // Example 2
+        System.out.println("countOdds(8, 10) = " + sol.countOdds(8, 10));  // 1
+        
+        // Additional tests
+        System.out.println("countOdds(1, 1) = " + sol.countOdds(1, 1));  // 1
+        System.out.println("countOdds(2, 2) = " + sol.countOdds(2, 2));  // 0
+        System.out.println("countOdds(0, 100) = " + sol.countOdds(0, 100));  // 50
+    }
+}
